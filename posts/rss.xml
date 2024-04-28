@@ -23,6 +23,8 @@
 
 
 
+    
+
 
 
 
@@ -31,7 +33,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"  xml:lang="en-us"  xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <atom:link href="https://nhartley.dev/rss.xml" rel="self" type="application/rss+xml"/>
+        <atom:link href="https://nhartley.dev/posts/rss.xml" rel="self" type="application/rss+xml"/>
 
         
 
@@ -42,14 +44,14 @@
         
 
         
-            <lastBuildDate>Sun, 28 Apr 2024 16:49:46 BST</lastBuildDate>
+            <lastBuildDate>Sun, 28 Apr 2024 16:43:12 BST</lastBuildDate>
         
 
-        <link>https://nhartley.dev/</link>
+        <link>https://nhartley.dev/posts/</link>
 
         
 
-        <title>nhartley</title>
+        <title>Posts · nhartley</title>
 
         
 
