@@ -17,6 +17,9 @@
 
 
 
+    
+        
+    
 
 
 
@@ -26,33 +29,93 @@
 
 
 
+
+
+    
 
 
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"  xml:lang="en-us"  xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0"  xml:lang="en"  xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <atom:link href="https://nhartley.dev/rss.xml" rel="self" type="application/rss+xml"/>
+        <atom:link href="http://localhost:1313/rss.xml" rel="self" type="application/rss+xml"/>
 
+        
+            <copyright>© Nathan Hartley</copyright>
         
 
         <description>Recent content</description>
 
         
-            <language>en-us</language>
+            <language>en</language>
         
 
         
-            <lastBuildDate>Sun, 28 Apr 2024 16:49:46 BST</lastBuildDate>
+            <lastBuildDate>Sun, 28 Apr 2024 16:43:12 BST</lastBuildDate>
         
 
-        <link>https://nhartley.dev/</link>
-
-        
-
-        <title>nhartley</title>
+        <link>http://localhost:1313/</link>
 
         
 
+        <title></title>
+
+        
+
+        
+            <item>
+                
+                
+                
+                
+                
+                
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+                
+
+                
+
+                
+                    
+                
+
+                
+
+                
+
+                
+
+                
+                    <description><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>Hi, my name is <strong>Nathan</strong>.<!-- raw HTML omitted --></p>
+<p>This is the first post on my <em>new</em> <a href="https://nhartley.dev/">website</a></p>
+]]></description>
+                
+
+                <guid  isPermaLink="false" >tag:localhost:1313,2024-04-28:2024-04-28T16:43:12+01:00</guid>
+
+                
+                    <link>http://localhost:1313/posts/my-first-post/</link>
+                
+
+                
+                    <pubDate>Sun, 28 Apr 2024 16:43:12 BST</pubDate>
+                
+
+                
+                    <title>My First Post</title>
+                
+            </item>
         
     </channel>
 </rss>

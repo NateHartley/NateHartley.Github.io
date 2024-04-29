@@ -31,27 +31,29 @@
 
 
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"  xml:lang="en-us"  xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0"  xml:lang="en"  xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <atom:link href="https://nhartley.dev/tags/rss.xml" rel="self" type="application/rss+xml"/>
+        <atom:link href="http://localhost:1313/tags/rss.xml" rel="self" type="application/rss+xml"/>
 
+        
+            <copyright>© Nathan Hartley</copyright>
         
 
         <description>Recent content</description>
 
         
-            <language>en-us</language>
+            <language>en</language>
         
 
         
             <lastBuildDate>Mon, 01 Jan 0001 00:00:00 UTC</lastBuildDate>
         
 
-        <link>https://nhartley.dev/tags/</link>
+        <link>http://localhost:1313/tags/</link>
 
         
 
-        <title>Tags · nhartley</title>
+        <title>Tags · </title>
 
         
 
