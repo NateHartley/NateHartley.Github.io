@@ -96,9 +96,8 @@
                 
 
                 
-                    <description><![CDATA[<h2 id="introduction">Introduction</h2>
-<p>Hi, my name is <strong>Nathan</strong>.<!-- raw HTML omitted --></p>
-<p>This is the first post on my <em>new</em> <a href="https://nhartley.dev/">website</a></p>
+                    <description><![CDATA[<p>Hi, my name is <strong>Nathan</strong>.<!-- raw HTML omitted --></p>
+<p>This is the first post on my <em>new</em> <a href="https://nhartley.dev/">website</a>.</p>
 ]]></description>
                 
 
@@ -113,7 +112,7 @@
                 
 
                 
-                    <title>My First Post</title>
+                    <title>First Post</title>
                 
             </item>
         
