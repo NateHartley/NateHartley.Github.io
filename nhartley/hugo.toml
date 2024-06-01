@@ -1,0 +1,24 @@
+baseURL = "https://nhartley.dev/"
+copyright = "© Nathan Hartley"
+enablerobotstxt = true
+languageCode = "en-us"
+paginate = 50
+timezone = "America/Los_Angeles"
+titlecasestyle = "Go"
+theme = "paige"
+
+[[languages.en.menu.main]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 20
+
+[[languages.en.menu.main]]
+identifier = "posts"
+name = "Posts"
+url = "/posts"
+weight = 30
+
+[params.paige]
+site_title = "Nathan Hartley"
+site_description = "Academic Blog"
