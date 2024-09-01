@@ -1,0 +1,69 @@
+/* Entire page style */
+html, body {
+    height: 100vh;
+    width: 100%;
+}
+
+body {
+    background-color: #292929;
+    color: #e7e7e7;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Dont remove this or vertical scroll bar will return */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Position of navbar container */
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    /* padding: 10px; */
+}
+
+/* Position of links within the navbar */
+.navbar_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin-left: auto;
+}
+
+.navbar_page {
+    padding: 1rem; 
+    /* Come back to this ^^ */
+}
+
+/* Text formatting for links */
+.navbar_link {
+    text-decoration: none;
+    color: #e7e7e7;
+    font-size: large;
+    font-family: "Gill Sans", sans-serif;
+}
+
+.navbar_link:hover {
+    color: orange;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: left;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    color: gray;
+}

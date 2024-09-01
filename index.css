@@ -1,0 +1,52 @@
+.main_content{
+    margin: 0;
+    padding-left: 20%;
+}
+
+.main_text {
+    font-size: 50px;
+    color: #0000;
+    animation: t 1.2s .5s both;
+    background: linear-gradient(orange 0 0) no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 0% 0%;
+}
+
+.description {  
+    font-size: 30px;
+    width: fit-content;
+
+    color: #0000;
+    animation: t 1.2s 1.5s both;
+    background: linear-gradient(#e7e7e7 0 0) no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 0% 0%;
+}
+
+@keyframes t {
+    to {background-size: 100% 100%;}
+}
+
+.external_links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links a {
+    color: #e7e7e7;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: orange;
+}
+
+.links a i {
+    padding-right: 10px;
+    padding-top: 5px;
+}
