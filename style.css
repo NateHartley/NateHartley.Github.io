@@ -26,7 +26,6 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 10px 50px;
-    /* padding: 10px; */
 }
 
 /* Position of links within the navbar */
@@ -39,8 +38,7 @@ body {
 }
 
 .navbar_page {
-    padding: 1rem; 
-    /* Come back to this ^^ */
+    padding: 1.2rem;
 }
 
 /* Text formatting for links */
@@ -52,14 +50,7 @@ body {
 }
 
 .navbar_link:hover {
-    color: orange;
-}
-
-.container {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: left;
+    color: #ffa500;
 }
 
 footer {

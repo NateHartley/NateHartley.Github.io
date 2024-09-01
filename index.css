@@ -1,3 +1,10 @@
+.container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: left;
+}
+
 .main_content{
     margin: 0;
     padding-left: 20%;
@@ -7,7 +14,7 @@
     font-size: 50px;
     color: #0000;
     animation: t 1.2s .5s both;
-    background: linear-gradient(orange 0 0) no-repeat;
+    background: linear-gradient(#ffa500 0 0) no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
     background-size: 0% 0%;
@@ -16,7 +23,6 @@
 .description {  
     font-size: 30px;
     width: fit-content;
-
     color: #0000;
     animation: t 1.2s 1.5s both;
     background: linear-gradient(#e7e7e7 0 0) no-repeat;
@@ -43,7 +49,7 @@
 }
 
 .links a:hover {
-    color: orange;
+    color: #ffa500;
 }
 
 .links a i {
