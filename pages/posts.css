@@ -1,0 +1,59 @@
+.post_list{
+    height: 100%;
+    padding-left: 20%;
+    padding-top: 10%;
+    padding-right: 20%;
+}
+
+.post_link {
+    list-style-type: none;
+    text-decoration: none
+}
+
+.post_item {
+    border: 5px solid;
+    border-color: #333333;
+    background-color: #333333;
+    border-radius: 10px;
+    box-shadow: 5px 10px #222222;
+    margin-bottom: 2rem;
+    transition: transform .2s;
+}
+
+.post_item:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+}
+
+.num {
+    display: inline;
+    color: #ffa500;
+    font-size: 50px;
+    padding-right: 1rem;
+}
+
+.title {
+    display: inline;
+    color: #e7e7e7;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 50px;
+}
+
+.desc {
+    color: #e7e7e7;
+    font-size: 20px;
+}
+
+.release_info {
+    display: inline;
+    font-style: italic;
+    color: #808080;
+    padding-right: 1rem;
+}
+
+.word_count {
+    display: inline;
+    font-style: italic;
+    color: #808080;
+}
