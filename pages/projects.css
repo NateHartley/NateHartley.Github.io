@@ -58,9 +58,15 @@
 }
 
 .release_info {
+    display: inline-block;
     font-style: italic;
     color: #808080;
-    padding-left: 150px;
-    padding-bottom: 38px;
+    padding-left: 0.75rem;
+    padding-bottom: 2.45rem;
+}
 
+.word_count {
+    display: inline;
+    font-style: italic;
+    color: #808080;
 }
