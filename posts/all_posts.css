@@ -3,17 +3,35 @@
     height: auto;
 }
 
+.container-short {
+    height: 100%;
+}
+
 .main_content {
     padding-left: 20%;
     padding-top: 5%;
     padding-right: 20%;
 }
 
+.release_info {
+    display: inline-block;
+    font-style: italic;
+    color: #808080;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.word_count {
+    display: inline;
+    font-style: italic;
+    color: #808080;
+}
+
 .title {
     font-size: 50px;
     font-family: "Gill Sans", sans-serif;
     color: #ffa500;
-    padding-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .subtitle {
