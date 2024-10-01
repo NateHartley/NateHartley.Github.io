@@ -79,3 +79,16 @@
 .link:hover{
     color: rgb(71, 173, 247);
 }
+
+.list {
+    padding-left: 2rem;
+}
+
+.list-text {
+    font-size: 20px;
+    color: #e7e7e7;
+}
+
+.end-buffer {
+    padding-bottom: 8rem;
+}
