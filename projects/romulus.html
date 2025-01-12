@@ -37,17 +37,24 @@
 
                 <h1 class="title">Romulus</h1>
                 <p class="release_info">Posted on 12/01/2025</p>
-                <p class="word_count">Word count: 840</p>
+                <p class="word_count">Word count: 910</p>
 
-                <p class="text">This project is named after the legendary Romulus, and it's icon is of a wolf silhouette. Twins Romulus and Remus suckled on a she-wolf when they were infants, and later in life Romulus became the founder and first King of Rome. Quite a <i>strong</i> character if you ask me.</p>
+                <hr>
+                <br>
+                <p class="text-project-repo"><a class="link" href="https://github.com/NateHartley/Romulus" target="_blank">Project Repository</a></p>   
+                <hr>
 
-                <p class="text">Other than an incomplete keylogger written in Python, I had no other cyber security related projects under my belt. With a growing need to expand my portfolio I decided to change this and build myself a password generator. Specifically, this would run as a Chrome web extension and make use of cryptographically strong randomly generated values.</p>
+                <br>
+
+                <p class="text">This project is named after the legendary Romulus, and it's icon is the silhouette of a wolf. Imagery surrounding Romulus often depicts him accompanied by a wolf as he and his twin brother Remus suckled on a she-wolf when they were infants. Later in life Romulus killed Remus before becoming the founder and first King of Rome.</p>
+
+                <p class="text">Other than an incomplete keylogger written in Python, I had no other cyber security related projects under my belt. With a growing need to expand my portfolio I decided to change this and built myself a password generator. Specifically, this runs as a Chrome web extension and makes use of cryptographically strong randomly generated values.</p>
 
                 <p class="text">The main functionalities behind this password generator is generating a range of random integers, converting them to ASCII and concatenating them together to form a string of a desired length. This would be the produced password. Further options were added later to allow the user to specify what kind of characters the password included.</p>
 
-                <p class="text">Originally, I was using Javascript's <a class="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random" target="_blank">math.random()</a> method to return a set of pseudo-random numbers within a specific range. However, I then became aware of the <a class="link" href="https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues" target="_blank">crypto.getRandomValues()</a> method which, unlike the previous method, produced cryptographically secure random numbers, which is much more desirable for my password generator. Although this does not produce truly random numbers, it is a pseudo-random number generator seeded with a value with enough entropy to make the returning values cryptographically secure.</p>
+                <p class="text">Originally, I was using Javascript's <a class="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random" target="_blank"><code>math.random()</code></a> method to return a set of pseudo-random numbers within a specific range. However, I then became aware of the <a class="link" href="https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues" target="_blank"><code>crypto.getRandomValues()</code></a> method which, unlike the previous method, produced cryptographically secure random numbers, which is much more desirable for my password generator. Although this does not produce truly random numbers, it is a pseudo-random number generator seeded with a value with enough entropy to make the returning values cryptographically secure.</p>
 
-                <p class="text">Construction of the initial password generator didn't take long so I added in extra functionality to allow the user to include/exclude certain sets of characters from the password. These options were:</p>
+                <p class="text">Construction of the initial password generator didn't take long so I added in extra functionality to allow the user to include/exclude certain sets of characters from the password. These options are:</p>
 
                 <ul class="list">
                     <li class="list-text">All letters uppercase</li>
@@ -57,7 +64,7 @@
                     <li class="list-text">Simplified set of symbols</li>
                 </ul>
 
-                <p class="text"></p> <!-- Space between list above and new paragraph-->
+                <br>
 
                 <p class="text">The length of the password is also customisable, ranging from 1 to 100 characters, but the default length is 16 characters which, <a class="link" href="https://www.cisa.gov/secure-our-world/require-strong-passwords" target="_blank">according to CISA</a>, is the minimum length needed for a password to be considered strong.</p>
 
@@ -68,28 +75,29 @@
                 <p class="text">Example generations (16 characters):</p>
 
                 <ul class="list">
-                    <li class="list-text">Standard generation&emsp;&emsp;&emsp;&nbsp;<samp class="list-text">cT6qV`IkO*i{WiU?</samp></li>
-                    <li class="list-text">Upercase only mode&emsp;&emsp;&emsp;&nbsp;<samp class="list-text">6.W2;4T9M4Q[R2_U</samp></li>
-                    <li class="list-text">Lowercase only mode&emsp;&emsp;&nbsp;&nbsp;&nbsp;<samp class="list-text">^p0p[5n(7q5}q_w)</samp></li>
-                    <li class="list-text">No numbers mode&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;<samp class="list-text">*RqPq/z!S.qV:i?o</samp></li>
-                    <li class="list-text">No symbols mode&emsp;&emsp;&emsp;&emsp; <samp class="list-text">Bl6QfE6hYmHfEv0W</samp></li>
-                    <li class="list-text">Simplified symbols mode&emsp;<samp class="list-text">T:9Y6FmE%7Ns=IqM</samp></li>
+                    <li class="list-text">Standard generation&emsp;&emsp;&emsp;&nbsp;<samp class="text-code ">cT6qV`IkO*i{WiU?</samp></li>
+                    <li class="list-text">Uppercase only mode&emsp;&emsp;&emsp;&nbsp;<samp class="text-code">6.W2;4T9M4Q[R2_U</samp></li>
+                    <li class="list-text">Lowercase only mode&emsp;&emsp;&nbsp;&nbsp;&nbsp;<samp class="text-code">^p0p[5n(7q5}q_w)</samp></li>
+                    <li class="list-text">No numbers mode&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;<samp class="text-code">*RqPq/z!S.qV:i?o</samp></li>
+                    <li class="list-text">No symbols mode&emsp;&emsp;&emsp;&emsp; <samp class="text-code">Bl6QfE6hYmHfEv0W</samp></li>
+                    <li class="list-text">Simplified symbols mode&emsp;<samp class="text-code">T:9Y6FmE%7Ns=IqM</samp></li>
                 </ul>
+
+                <br>
+
+                <p class="text">It is also possible to combine the modes together. For example, here is a generated password with the uppercase only, no numbers, and simplified symbols modes all selected:&emsp;<samp class="text-code">Z=Q:R!L#Z#P%N:R#</samp></p>
 
                 <h1 class="subtitle">Considerations</h1>
 
-                <p class="text">It occurred to me that although special characters are urged to be used when creating strong passwords, some special characters are forbidden. A reason for this can be because these characters have particular functionalities that can affect the code behind whatever input field they and entered into. Especially if these inputs are not properly sanitised which is done to protect against certain XSS attacks. These characters can be backticks, double speech marks, angle brackets, hashtags, slashes etc. The Gibson Research Corporation have a simplified passcode character set option in their <a class="link" href="https://www.grc.com/ppp.htm" target="_blank">Perfect Paper Passwords</a> one time password system that I used when choosing which symbols should be included in my simplified symbols option as all the characters were generally inoffensive.</p>
+                <p class="text">It occurred to me that although special characters are urged to be used when creating strong passwords, some special characters are forbidden. A reason for this can be because these characters have particular functionalities that can affect the code behind whatever input field they are entered into. Especially if these inputs are not properly sanitised which is done to protect against certain XSS attacks. These characters can be backticks, double speech marks, angle brackets, hashtags, slashes etc. The Gibson Research Corporation has a simplified passcode character set option in their <a class="link" href="https://www.grc.com/ppp.htm" target="_blank">Perfect Paper Passwords</a> one time password system that I used when choosing which symbols should be included in my simplified symbols option as all of these symbols were generally inoffensive (! # % + : = ? @).</p>
 
-                <p class="text">Every generated number needs to be checked to make sure it falls within a certain range before being converted to ASCII to make sure that only the letters a-z, the numbers 0-9, and the symbols found on English/American keyboards can be chosen for the password. If this number falls out of bounds then it is discarded and the next number is considered. The password does not ensure that one of every type of character is included in the password, it simply hops from encoded random number to the next, and if this number falls outside of the acceptable range then it is discarded. This means it is possible to generate a password that contains no symbols even when the simplified symbols option is selected, especially when the password length is short. To get around this, a check is made when this mode is selected that examines the produced string for symbols and if none are found then the last character is replaced by a symbol. This final symbol is chosen from a set of symbols using the math.random() method. Although this method is not as secure as the crypto.getRandomValues() method, the cryptographic strength of the password is not negatively affected by this as every other character in the password is still generated through the latter method, maintaining strong pseudo-randomness.</p>
+                <p class="text">Every generated number needs to be checked to make sure it falls within a certain range before being converted to ASCII to make sure that only the letters a-z and A-Z, the numbers 0-9, and the symbols found on English/American keyboards can be chosen for the password. If this number falls out of bounds then it is discarded and the next number is considered. The password does not ensure that one of every type of character is included in the password, it simply hops from encoded random number to the next, and if this number falls outside of the acceptable range then it is discarded. This means it is possible to generate a password that contains no symbols even when the simplified symbols option is selected, especially when the password length is short. To get around this, a check is made when this mode is selected that examines the produced string for symbols and if none are found then the last character is replaced by a symbol. This final symbol is chosen from a set of symbols using the <code>math.random()</code> method. Although this method does not produce the same level of pseudo-randomness as the <code>crypto.getRandomValues()</code> method, the cryptographic strength of the password is not negatively affected by this as every other character in the password is still generated through the latter method, maintaining strong pseudo-randomness.</p>
 
                 <h1 class="subtitle">Future Additions</h1>
 
                 <p class="text">The NCSC recommends creating passwords with <a class="link" href="https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/three-random-words" target="_blank">three memorable words</a> in order to make them difficult to crack whilst still being easier to recall than a completely random set of characters.</p>
 
-                <p class="text">The addition of an option to generate a password that is made from three common words would be a good addition to this password generator. Having both options of a completely random password and a more memorable one is a favourable edition as the first can be inputted straight into a password manager on generation, and the latter one would be used when more frequent recall is required.</p>
-
-                <p class="text">Link to Github repo: <a class="link" href="https://github.com/NateHartley/Romulus" target="_blank">https://github.com/NateHartley/Romulus</a></p>
-
+                <p class="text">The option to generate a password that is made from three common words would be a good addition to this password generator. Having both options of a completely random password and a more memorable one is a favourable addition as the first can be inputted straight into a password manager on generation, and the latter one would be used when more frequent recall is required.</p>
 
                 <p class="end-buffer"></p>
 
