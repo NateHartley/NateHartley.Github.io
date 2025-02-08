@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="all_projects.css">
+        <title>nhartley.dev</title>
+        <link rel="icon" href="/images/NH.png">
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="navbar">
+                <ul class="navbar_list">
+                    <li class="navbar_page">
+                        <a class="navbar_link" href="/">Home</a>
+                    </li>
+                    <li class="navbar_page">
+                        <a class="navbar_link" href="/pages/about.html">About</a>
+                    </li>
+                    <li class="navbar_page">
+                        <a class="navbar_link" href="/pages/posts.html">Posts</a>
+                    </li>
+                    <li class="navbar_page">
+                        <a class="navbar_link" href="/pages/projects.html">Projects</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="container">
+
+            <div class="main_content">
+
+                <h1 class="title">Keylogger</h1>
+                <p class="release_info">Posted on 08/02/2025</p>
+                <p class="word_count">Word count: 600</p>
+
+                <hr>
+                <br>
+                <p class="text-project-repo"><a class="link" href="https://github.com/NateHartley/Keylogger" target="_blank">Project Repository</a></p>   
+                <hr>
+
+                <br>
+
+                <p class="text">To better understand how malware is constructed and distributed, I've developed my own piece of rudimentary malware. A simple keylogger written in Python. Deploy and run this script on a target machine to capture user's keystrokes!</p>
+
+                <p class="text">This script utilises Python's <a class="link" href="https://pypi.org/project/keyboard/" target="_blank">keyboard library</a> to detect keystrokes. Once a key is pressed, this event will trigger a function to create a log file and will write the keypress to it. The script will continue until either the specified timer runs out, or the exit key (#) is pressed.</p>
+
+                <p class="text">Most of the heavy lifting is done by the keyboard library, with it's <samp class="text-code">on_press()</samp> function being able to capture each keystroke. The <samp class="text-code">wait()</samp> function is then used to prevent the script from exiting once the user has interacted with the keyboard, allowing it to capture subsequent keystrokes. In it's simplest form, the entire keylogger can be written in just a handful of lines:</p>
+
+                <p class="text">
+                <samp class="text-code">
+                    open("output.txt", "w").close()<br>
+                    def press_key(event):<br>
+                    &emsp;&emsp;&emsp;&emsp;file.write(event.name)<br>
+                    keyboard.on_press(press_key)<br>
+                    keyboard.wait()
+                </samp>
+                </p>
+
+                <p class="text">Before running the script, users have the option to parse in specific flags into the terminal. In total there are five options: help, format, timer, encrypt, and decrypt.</p>
+
+                <p class="text">The <samp class="text-code">-h</samp> flag displays a help menu with a short description of the script and a breakdown of all the flags that can be used.</p>
+
+                <p class="text">The formatting of the log file can be changed with <samp class="text-code">-f</samp>. If this flag is present then each keystroke will be written to a new line, else everything is written onto the same line.</p>
+
+                <p class="text">A timer can be set for the keylogger with the <samp class="text-code">-t</samp> flag by providing an integer which is used as the number of seconds the script will run for.</p>
+
+                <p class="text">Users are able to encrypt the contents of the log file with the <samp class="text-code">-e</samp> flag along with providing a string which is used as the encryption key. This is triggers once the last keystroke has been pressed, signified by either the provided timer running out or the exit key being pressed.</p>
+
+                <p class="text">Equally, users can use the <samp class="text-code">-d</samp> flag to decrypt the contents of the log file but only if they provide the same key used to encrypt it.</p>
+
+                <p class="text">The log file is named ".process.log" in an attempt to mask it as a generic system file that wouldn't be flagged as anything out of the ordinary. The file is also hidden from the file explorer view to further reduce the possibility of it being discovered by the targeted user.</p>
+
+                <h1 class="subtitle">Improvements</h1>
+
+                <p class="text">An obvious improvement to this project is to configure continuous encryption of the log file, rather than encrypting towards the end of the script once the timer has stopped or exit key is pressed. This is to better conceal the captured keystrokes, protecting them against being intercepted or read prematurely. Currently, when the script is ran with the encryption mode on but is then stopped in an unexpected way (e.g. forced interruption), the captured keystrokes are still recorded but are not encrypted since the script exited before the encryption function could be reached.</p>
+
+                <p class="text">Although the log file is hidden, disguised as a generic system file, and is able to be encrypted, its generation location hasn't been optimised. At the moment, it is created within the same directory that houses the keylogger script. An improvement to further conceal the it would be to house it in a non-obvious deeper directory that's closer to root and is still able to be modified without higher than standard user privileges.</p>
+
+                <p class="text">Here are some examples of where the log file could be written to that can be done by a standard user:</p>
+
+                <p class="text">Windows - <samp class="text-code">C:\ProgramData</samp></p>
+                <p class="text">Linux - <samp class="text-code">/usr/share</samp></p>
+                <p class="text">Mac - <samp class="text-code">/var/tmp</samp></p>
+
+                <p class="end-buffer"></p>
+
+            </div>
+
+        </div>
+
+        <footer>© Nathan Hartley</footer>
+    </body>
+
+</html>
