@@ -70,7 +70,7 @@
 
                 <p class="text">A timer can be set for the keylogger with the <samp class="text-code">-t</samp> flag by providing an integer which is used as the number of seconds the script will run for.</p>
 
-                <p class="text">Users are able to encrypt the contents of the log file with the <samp class="text-code">-e</samp> flag along with providing a string which is used as the encryption key. This is triggers once the last keystroke has been pressed, signified by either the provided timer running out or the exit key being pressed.</p>
+                <p class="text">Users are able to encrypt the contents of the log file with the <samp class="text-code">-e</samp> flag by providing a string which is used as the encryption key. This triggers once the last keystroke has been pressed, signified by either the provided timer running out or the exit key being pressed.</p>
 
                 <p class="text">Equally, users can use the <samp class="text-code">-d</samp> flag to decrypt the contents of the log file but only if they provide the same key used to encrypt it.</p>
 
@@ -78,7 +78,7 @@
 
                 <h1 class="subtitle">Improvements</h1>
 
-                <p class="text">An obvious improvement to this project is to configure continuous encryption of the log file, rather than encrypting towards the end of the script once the timer has stopped or exit key is pressed. This is to better conceal the captured keystrokes, protecting them against being intercepted or read prematurely. Currently, when the script is ran with the encryption mode on but is then stopped in an unexpected way (e.g. forced interruption), the captured keystrokes are still recorded but are not encrypted since the script exited before the encryption function could be reached.</p>
+                <p class="text">An obvious improvement to this project is to configure continuous encryption of the log file, rather than encrypting it towards the end of the script once the timer has stopped or exit key is pressed. This is to better conceal the captured keystrokes, protecting them against being intercepted or read prematurely. Currently, when the script is ran with the encryption mode on but is then stopped in an unexpected way (e.g. forced interruption), the captured keystrokes are still recorded but are not encrypted since the script exited before the encryption function could be reached.</p>
 
                 <p class="text">Although the log file is hidden, disguised as a generic system file, and is able to be encrypted, its generation location hasn't been optimised. At the moment, it is created within the same directory that houses the keylogger script. An improvement to further conceal the it would be to house it in a non-obvious deeper directory that's closer to root and is still able to be modified without higher than standard user privileges.</p>
 
