@@ -12,25 +12,25 @@
 .main_text {
     font-size: 50px;
     color: #0000;
-    animation: t 1.2s .5s both;
+    animation: title_reveal 1.2s .5s both;
     background: linear-gradient(#ffa500 0 0) no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
-    background-size: 0% 0%;
+    background-size: 0% 100%;
 }
 
 .description {  
     font-size: 30px;
     width: fit-content;
     color: #0000;
-    animation: t 1.2s 1.5s both;
+    animation: title_reveal 1.2s 1.5s both;
     background: linear-gradient(#e7e7e7 0 0) no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
-    background-size: 0% 0%;
+    background-size: 0% 100%;
 }
 
-@keyframes t {
+@keyframes title_reveal {
     to {background-size: 100% 100%;}
 }
 
@@ -47,6 +47,26 @@
     text-decoration: none;
 }
 
+.icon1{
+    /* Icon fades in and upwards */
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1s ease-out forwards;
+    animation-delay: 2.5s;
+    will-change: transform, opacity;
+    display: inline-block;
+}
+
+.icon2{
+    /* Icon fades in and upwards */
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1s ease-out forwards;
+    animation-delay: 2.8s;
+    will-change: transform, opacity;
+    display: inline-block;
+}
+
 .links a:hover {
     color: #ffa500;
 }
@@ -54,4 +74,15 @@
 .links a i {
     padding-right: 10px;
     padding-top: 5px;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
