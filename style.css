@@ -12,7 +12,7 @@ body {
     flex-direction: column;
 }
 
-/* Dont remove this or vertical scroll bar will return */
+/* Don't remove this or vertical scroll bar will return */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -46,7 +46,7 @@ body {
     text-decoration: none;
     color: #e7e7e7;
     font-size: large;
-    font-family: "Gill Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .navbar_link:hover {
