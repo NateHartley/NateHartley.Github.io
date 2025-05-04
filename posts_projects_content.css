@@ -1,4 +1,4 @@
-/* If post content is longer than a page, set height to auto, else set it to 100% */
+/* If post/projects content is longer than a page, set height to auto, else set it to 100% */
 .container {
     height: auto;
 }
@@ -43,7 +43,18 @@
 .text {
     font-size: 20px;
     color: #e7e7e7;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.text-project-repo {
+    font-size: 20px;
+    color: #e7e7e7;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.text-code {
+    color: #ffa500;
 }
 
 .image {
