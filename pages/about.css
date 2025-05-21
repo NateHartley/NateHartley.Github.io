@@ -32,7 +32,7 @@
     }
 
     .main_content p {
-        /* To keep things consistent this should be 0.8rem, but 1.2rem is easier to read */
-        font-size: 1.2rem;
+        /* To keep things consistent this should be 0.8rem, but 1rem is easier to read */
+        font-size: 1rem;
     }
 }
