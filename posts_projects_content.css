@@ -104,3 +104,35 @@
 .end-buffer {
     padding-bottom: 8rem;
 }
+
+
+@media (max-width: 768px) {
+    .main_content {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .main_content h1 {
+        font-size: 2rem;
+    }
+
+    .main_content p {
+        font-size: 1rem;
+    }
+
+    .main_content .release_info {
+        font-size: 0.8rem;
+    }
+
+    .main_content .word_count {
+        font-size: 0.8rem;
+    }
+
+    .image {
+        width: fit-content;
+    }
+
+    .small-image {
+        width: 60%;
+    }
+}
