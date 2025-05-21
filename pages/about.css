@@ -20,3 +20,19 @@
     color: #e7e7e7;
     padding-bottom: 1rem;
 }
+
+@media (max-width: 768px) {
+    .main_content {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .main_content h1 {
+        font-size: 2rem;
+    }
+
+    .main_content p {
+        /* To keep things consistent this should be 0.8rem, but 1.2rem is easier to read */
+        font-size: 1.2rem;
+    }
+}
