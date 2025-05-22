@@ -73,6 +73,11 @@
 @media (max-width: 768px) {
     .project_link {
         width: 80vw;
+        max-height: 6rem;
+    }
+
+    .project_item {
+        min-height: 6rem;
     }
 
     .image {
@@ -90,13 +95,13 @@
     }
 
     .desc {
-        font-size: 0.8rem;
+        font-size: 1rem;
         padding-left: 6.5rem;
     }
 
     .release_info {
         font-size: 0.6rem;
-        padding-bottom: 0.8rem;
+        padding-bottom: 0;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
