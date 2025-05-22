@@ -139,4 +139,8 @@
     .small-image {
         width: 60%;
     }
+
+    .text-code {
+        font-size: 0.9rem;
+    }
 }
