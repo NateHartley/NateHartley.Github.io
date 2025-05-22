@@ -34,6 +34,7 @@
     display: inline;
     color: #ffa500;
     font-size: 50px;
+    font-weight: bold;
     padding-right: 1rem;
 }
 
@@ -41,6 +42,7 @@
     display: inline;
     color: #e7e7e7;
     font-family: "Roboto", sans-serif;
+    font-weight: bold;
     font-size: 50px;
 }
 
@@ -60,4 +62,42 @@
     display: inline;
     font-style: italic;
     color: #808080;
+}
+
+@media (max-width: 768px) {
+    .post_list {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .post_title_num {
+        display: flex;
+        overflow: hidden;
+    }
+
+    .num {
+        font-size: 2rem;
+    }
+
+    .title {
+        font-size: 2rem;
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .desc {
+        font-size: 1rem;
+    }
+
+    .release_info {
+        font-size: 0.6rem;
+        padding-bottom: 0;
+        padding-right: 0.5rem;
+    }
+
+    .word_count {
+        font-size: 0.6rem;
+    }
 }
