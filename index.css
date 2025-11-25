@@ -67,16 +67,6 @@
     display: inline-block;
 }
 
-.icon3{
-    /* Icon fades in and upwards */
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeUp 1s ease-out forwards;
-    animation-delay: 3.1s;
-    will-change: transform, opacity;
-    display: inline-block;
-}
-
 .links a:hover {
     color: #ffa500;
 }
