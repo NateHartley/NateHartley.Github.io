@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../posts_projects_content.css">
+        <title>nhartley.dev</title>
+        <link rel="icon" href="/images/NH.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="navbar">
+                <ul class="navbar_list">
+                    <li class="navbar_page">
+                        <a class="navbar_link" href="/">Home</a>
+                    </li>
+                    <li class="navbar_page">
+                        <a class="navbar_link" href="/pages/about.html">About</a>
+                    </li>
+                    <li class="navbar_page">
+                        <a class="navbar_link" href="/pages/posts.html">Posts</a>
+                    </li>
+                    <li class="navbar_page">
+                        <a class="navbar_link" href="/pages/projects.html">Projects</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="container">
+
+            <div class="main_content">
+
+                <h1 class="title">TCP Stack Sim</h1>
+                <p class="release_info">Posted on 19/01/2026</p>
+                <p class="word_count">Word count: 510</p>
+
+                <hr>
+                <br>
+                <p class="text-project-repo"><a class="link" href="https://github.com/NateHartley/TCP_Stack_Sim" target="_blank">Project Repository</a></p>   
+                <hr>
+
+                <br>
+
+                <p class="text">Having completed many cyber security focused courses in the previous year, I had a basic understanding of networking but nothing that substantial. I undertook this project to become more familiar with the inner workings of one of the most fundamental networking protocols: Transmission Control Protocol (TCP).</p>
+
+                <p class="text">My goal here was not to reinvent the protocol itself, but to simulate two entities communicating with each other through the use of a simplified self-implemented TCP stack. Some notable features of this project include: the ability to read and write TCP flags, establish TCP connection states, send and receive data between a client and server, and simulate the TCP packet structure.</p>
+
+                <h1 class="subtitle">Project Debrief</h1>
+
+                <p class="text">Python's <a class="link" href="https://docs.python.org/3/library/socket.html" target="_blank">socket library</a> is doing a lot of heavy lifting here and is used to establish the true network connection between the client and server. My project is only supposed to focus on the functionality of TCP, and this library deals with a lot of complex low-level networking that I didn't want to tackle here.</p>
+
+                <p class="text">First, I created a simple echo server using the socket library mentioned above to understand how a connection is created between two python files, and how data is transmitted between them. After this, I was initially sending TCP flags as strings over the network but changed the format to be one dictionary containing all flags that either have the value 0 or 1. This change was made to better mimic how real world TCP flags are stored and set.</p>
+
+                <img class="image" src="../images/TCPsegment.png" alt="TCP Segment">
+                
+                <p class="alt-text">TCP Segment</p>
+
+                <p class="text">The <a class="link" href="https://en.wikipedia.org/wiki/Transmission_Control_Protocol" target="_blank">TCP segment</a> image above helps to visualise how flags are set. Flags are stored in the second octet of a segment and are given a total of 8 bits of space, 1 bit for every flag (0 or 1). Depending on which flag is set to 1 will determine what state the client/server will switch to and which flag will be transmitted in the next packet transfer. Otherwise, if the flag is set to 0 then it's ignored and the next bit is read. This is what my flag dictionary is replicating.</p>
+
+                <p class="text">All flag bits, data, data length, sequence number, acknowledge number, and checksum are compiled into a byte stream, encoded in UTF-8, and sent through the established socket.</p>
+
+                <p class="text">States, as opposed to flags, are not sent over the network in a TCP segment but are instead set locally on each machine in memory. States are used to manage several things throughout transmissions between two entities such as determining the order of communication.</p>
+
+                <h1 class="subtitle">Future Additions</h1>
+
+                <p class="text">I want to included detailed logging and timestamps to each packet transmitted mainly to facilitate easier debugging. I would also like to be able to simulate packet loss or delay.</p>
+
+                <p class="text">Perhaps making the project multi-threaded would be interesting, allowing it to handle multiple clients requesting data from a singular server.</p>
+
+                <p class="text">Finally I would love to be able to simulate various TCP attacks such as a <a class="link" href="https://www.cloudflare.com/en-gb/learning/ddos/syn-flood-ddos-attack/" target="_blank">SYN flood attack</a> and how my stack would handle these events.</p>
+
+                <p class="end-buffer"></p>
+
+            </div>
+
+        </div>
+
+        <footer>© Nathan Hartley</footer>
+    </body>
+
+</html>
